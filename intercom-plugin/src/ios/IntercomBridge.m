@@ -1,5 +1,4 @@
 #import "IntercomBridge.h"
-#import "AppDelegate+IntercomPush.h"
 #import <Intercom/Intercom.h>
 
 @interface Intercom (Cordoava)

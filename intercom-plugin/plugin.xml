@@ -27,9 +27,6 @@
       <header-file src="src/ios/IntercomBridge.h" />
       <source-file src="src/ios/IntercomBridge.m" />
 
-      <header-file src="src/ios/AppDelegate+IntercomPush.h" />
-      <source-file src="src/ios/AppDelegate+IntercomPush.m" />
-
       <config-file target="config.xml" parent="/*">
         <feature name="Intercom">
           <param name="ios-package" value="IntercomBridge" />
@@ -41,10 +38,8 @@
         <string>Send photos in your messages to the app.</string>
       </config-file>
 
-      <config-file target="*-Info.plist" parent="UIBackgroundModes">
-        <array>
-          <string>remote-notification</string>
-        </array>
+      <config-file target="*-Info.plist" parent="IntercomAutoIntegratePushNotifications">
+        <boolean>0</boolean>
       </config-file>
 
       <framework src="Intercom" type="podspec" spec="~> 8.0.0" />
