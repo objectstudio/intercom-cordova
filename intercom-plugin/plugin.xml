@@ -39,7 +39,7 @@
       </config-file>
 
       <config-file target="*-Info.plist" parent="IntercomAutoIntegratePushNotifications">
-        <boolean>0</boolean>
+        <false/>
       </config-file>
 
       <framework src="Intercom" type="podspec" spec="~> 8.0.0" />
